@@ -13,8 +13,9 @@ class MenuController extends Controller
         $menu = $this->buildMenu($arrMenu);
         return view('home', ['menu' => $menu]);
     }
-    public function buildMenu ($arrMenu){
-        $mBuilder = LavMenu::make('MyNav', function($m) use ($arrMenu){
+    public function buildMenu ($arrMenu)
+    {
+        $mBuilder = LavMenu::make('MyNav', function($m) use ($arrMenu) {
             foreach($arrMenu as $item){
                 /*
                  * Для родительского пункта меню формируем элемент меню в корне
