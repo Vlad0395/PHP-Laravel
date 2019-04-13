@@ -14,7 +14,8 @@ class Category extends Model
         {
             $this->attributes['slug'] = str_slug($this->attributes['name'], '-');
         }
-        else {
+        else
+        {
             $this->attributes['slug'] = str_slug($value, '-');
         }
     }
