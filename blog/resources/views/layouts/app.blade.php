@@ -9,7 +9,8 @@
 
     <title>{{ config('app.name', 'BlogCar') }}</title>
     <!--Fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--style-->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
@@ -17,8 +18,11 @@
     <!--script-->
 
     <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -31,126 +35,99 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 
-    <!--Sima-->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!--[if lt IE 9]> <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script> <![endif]-->
-    <!-- Place favicon.ico in the root directory -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/style.css">
 
     <!--fontwesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-=======
->>>>>>> 931904f042fc814eee63985a8280bf5f5daae65c
 </head>
 <body>
-    <div id="app">
-
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-<<<<<<< HEAD
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'BlogCar') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse navbar-header" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto nav">
-                        <li class="active"><a href="{{ url('/home') }}">Home</a></li>
-                        <li><a  href="#">News</a>
-                        <li><a  href="#">About</a>
-                       <li><a href="#">Contacts</a></li>
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    {{--<form class="form-inline my-2 my-lg-0">--}}
-                        {{--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}
-                        {{--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>--}}
-                    {{--</form>--}}
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-=======
-            <div class="row">
-                <div class="col-md-12 string-blue"></div>
-            </div>
-         <div class="container center-text">
-
-             <div class="row">
-                 <div class="col-md-4">
-                     <i class="fab fa-twitter"></i>
-                     <i class="fab fa-facebook-f"></i>
-                     <i class="fab fa-invision"></i>
-                 </div>
-                 <div class="col-md-4">
-                   <div class="title"> News Cars </div>
-                 </div>
-                 <div class="col-md-4">
-                     <ul class="navbar-nav ml-auto center-li">
-                         <!-- Authentication Links -->
-                         @guest
-                             <li class="nav-item">
-                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                             </li>
-                             @if (Route::has('register'))
-                                 <li class="nav-item">
-                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                 </li>
-                             @endif
-                         @else
-                             <li class="nav-item dropdown">
-                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                     {{ Auth::user()->name }} <span class="caret"></span>
-                                 </a>
->>>>>>> 931904f042fc814eee63985a8280bf5f5daae65c
-
-                                 <div class="dropdown-menu dropdown-menu-right" >
-                                     <a class="" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                         {{ __('Logout') }}
-                                     </a>
-
-                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                         @csrf
-                                     </form>
-                                 </div>
-                             </li>
-                         @endguest
-                     </ul>
-                 </div>
-             </div>
-         </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+<div class="container-fluid">
+    <div class="row stringRed">
     </div>
-
+    <div class="row justify-content-center" >
+        <div class="col-md-5 align-self-center text-center">
+            <a href="https://twitter.com/laravelnews"><i class="fab fa-twitter-square fa-2x"></i></a>
+            <a href="https://www.facebook.com/laravelnews"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/laravel-news"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="col-md-2 logoLN">
+            LN
+        </div>
+        <div class="col-md-5 align-self-center">
+            <form class="form-inline mr-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+            <a href="https://laravel-news.com/">Laravel News</a><br>
+            <a href="https://laravel-news.com/">THE OFFICIAL LARAVEL NEWS SOURCE</a>
+        </div>
+    </div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Tutorial</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Packages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Podcast</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Newsletter</a>
+        </li>
+    </ul>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-7" >
+                <div class="postImg"></div>
+                <div class="textNews">
+                    <h5>News</h5>
+                    <div>Laravel Craftsman CLI</div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-12 subscript">
+                        <h2>Newsletter</h2>
+                        <hr>
+                        <p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>
+                        <form action="" class="form">
+                            <input type="email">
+                            <input type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="newsImg"></div>
+                        <div>
+                            <h5>NEWS</h5>
+                            <p>Laravel Up and Running Second Edition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--<div class="row">--}}
+            {{--<div class="col-md-4">--}}
+                {{--1--}}
+            {{--</div>--}}
+            {{--<div class="col-md-4">--}}
+                {{--2--}}
+            {{--</div>--}}
+            {{--<div class="col-md-4">--}}
+                {{--3--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    </section>
+</div>
 </body>
 </html>
