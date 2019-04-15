@@ -17,7 +17,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('admin.user.index',compact('users'));
+        return view('admin.user.index', compact('users'));
     }
 
     /**
@@ -33,9 +33,9 @@ class UsersController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'email'=> 'required|unique:users',
-            'name'=> 'required',//имя уникальное проверяется в указаной таблице 'categories'
+        $this->validate($request, [
+            'email' => 'required|unique:users',
+            'name' => 'required',//имя уникальное проверяется в указаной таблице 'categories'
         ]);
         $user = new User();
         $user->name = $request->name;
@@ -50,7 +50,7 @@ class UsersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -61,7 +61,7 @@ class UsersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -74,13 +74,13 @@ class UsersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $user =User::find($id);
+        $user = User::find($id);
         $user->roles()->sync($request->role);
         return redirect('/admin/user');
     }
@@ -88,7 +88,7 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

@@ -21,7 +21,7 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@show')->name('welcome');
 //Route::get('/category/{slug}', 'HomeController@category');
 
-Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>['auth','admin']],function()
+Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>['auth','admin']], function()
 {
     Route::get('/', 'AdminController@index');
     Route::resource('/category', 'CategoryController');

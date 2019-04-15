@@ -25,7 +25,8 @@ class HomeController extends Controller
     {
         return view('home');
     }
-    public  function show(){
+    public  function show()
+    {
         return view('welcome');
     }
     public function category($slug)
