@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
@@ -23,12 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('main');
     }
-    public  function show()
-    {
-        return view('welcome');
-    }
+
     public function category($slug)
     {
         $category = Category::where('slug', $slug)->first();// знаки идут вторым параметром

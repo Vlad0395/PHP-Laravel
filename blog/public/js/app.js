@@ -48965,17 +48965,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\nExpected \"{\".\n  ╷\n2 │ var content = require(\"!!../../node_modules/css-loader/index.js?{\\\"importLoaders\\\":1}!../../node_modules/postcss-loader/src/index.js?{\\\"plugins\\\":[null]}!./app.css\");\n  │                                                                                                                                                                      ^\n  ╵\n  stdin 2:166  root stylesheet\r\n      in D:\\course\\php_dz\\blog\\resources\\css\\app.css (line 2, column 166)\n    at runLoaders (D:\\course\\php_dz\\blog\\node_modules\\webpack\\lib\\NormalModule.js:301:20)\n    at D:\\course\\php_dz\\blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at D:\\course\\php_dz\\blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (D:\\course\\php_dz\\blog\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at render (D:\\course\\php_dz\\blog\\node_modules\\sass-loader\\lib\\loader.js:52:13)\n    at Function.$2 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:24106:48)\n    at w6.$2 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:15161:15)\n    at u6.v7 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:9031:42)\n    at u6.v6 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:9033:32)\n    at ik.uh (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8373:46)\n    at tF.$0 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8515:7)\n    at Object.ex (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1532:80)\n    at aj.bb (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8436:3)\n    at iz.bb (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8366:25)\n    at iz.cA (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8353:6)\n    at p8.cA (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8143:35)\n    at Object.n (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1405:19)\n    at D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:5110:51\n    at ww.a (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1416:71)\n    at ww.$2 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8158:23)\n    at v9.$2 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8153:25)\n    at u6.v7 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:9031:42)\n    at u6.v6 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:9033:32)\n    at ik.uh (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8373:46)\n    at tF.$0 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8515:7)\n    at Object.ex (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1532:80)\n    at aj.bb (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8436:3)\n    at iz.bb (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8366:25)\n    at iz.cA (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8353:6)\n    at p9.$0 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8148:24)\n    at Object.Hu (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1560:5)\n    at nk.HH (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:1562:7)\n    at pd.$0 (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:8117:22)\n    at Iq (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:586:52)\n    at Immediate._onImmediate (D:\\course\\php_dz\\blog\\node_modules\\sass\\sass.dart.js:595:51)\n    at runCallback (timers.js:794:20)");
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -49141,15 +49130,26 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***********************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/app.css ***!
-  \***********************************************************/
+/*!*************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\course\php_dz\blog\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\course\php_dz\blog\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! D:\course\GitHub\HTML&CSS\PHP&Laravel\blog\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\course\GitHub\HTML&CSS\PHP&Laravel\blog\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -17,11 +17,10 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/', 'HomeController@show')->name('welcome');
+Route::get('/', 'HomeController@index');
 //Route::get('/category/{slug}', 'HomeController@category');
 
-Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>['auth','admin']], function()
+Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>'admin'], function()
 {
     Route::get('/', 'AdminController@index');
     Route::resource('/category', 'CategoryController');
