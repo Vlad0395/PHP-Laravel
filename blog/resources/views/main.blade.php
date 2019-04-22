@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--style-->
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{--<link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">--}}
+    {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <!--script-->
 
@@ -37,39 +37,39 @@
 <body>
 
 @include('layouts.headerMain')
-<div class="container-fluid">
-    <section class="container">
-        <div class="row">
-            <div class="col-md-7" >
-                <div class="postImg"></div>
-                <div class="textNews">
-                    <h5>News</h5>
-                    <div>Laravel Craftsman CLI</div>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="row">
-                    <div class="col-md-12 subscript">
-                        <h2>Newsletter</h2>
-                        <hr>
-                        <p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>
-                        <form action="" class="form">
-                            <input type="email">
-                            <input type="submit" value="SUBSCRIBE">
-                        </form>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="newsImg"></div>
-                        <div>
-                            <h5>NEWS</h5>
-                            <p>Laravel Up and Running Second Edition</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+{{--<div class="container-fluid">--}}
+    {{--<section class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-md-7" >--}}
+                {{--<div class="postImg"></div>--}}
+                {{--<div class="textNews">--}}
+                    {{--<h5>News</h5>--}}
+                    {{--<div>Laravel Craftsman CLI</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-5">--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-12 subscript">--}}
+                        {{--<h2>Newsletter</h2>--}}
+                        {{--<hr>--}}
+                        {{--<p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>--}}
+                        {{--<form action="" class="form">--}}
+                            {{--<input type="email">--}}
+                            {{--<input type="submit" value="SUBSCRIBE">--}}
+                        {{--</form>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="row">--}}
+                    {{--<div class="col-md-12">--}}
+                        {{--<div class="newsImg"></div>--}}
+                        {{--<div>--}}
+                            {{--<h5>NEWS</h5>--}}
+                            {{--<p>Laravel Up and Running Second Edition</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         {{--<div class="row">--}}
         {{--<div class="col-md-4">--}}
         {{--1--}}
@@ -81,8 +81,8 @@
         {{--3--}}
         {{--</div>--}}
         {{--</div>--}}
-    </section>
-</div>
+    {{--</section>--}}
+{{--</div>--}}
 </body>
 
 </html>

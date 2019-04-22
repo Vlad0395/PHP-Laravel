@@ -1,69 +1,111 @@
 body{
-    margin: 0;
     padding: 0;
+    margin: 0 ;
 }
-.header{
-
+div .logoLN{
+   margin: 0 auto;
+    position: relative;
+    z-index: 3;
 }
-.stringRed{
-    background: #f4645f;
-    height: 3px;
+.log .logoLN:hover{
+    background: #f22c40;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #f5f5f5;
+    position: relative;
+    top:-147px;
+    z-index: 1;
+}
+.rowRed{
+    border-top: 4px solid #f4645f;
+    /*background: red;*/
 }
 .logoLN{
-    background: #f4645f;
+    width: 100px;
+    height: 95px;
     text-align: center;
-    color: #fff;
-    font-family: "Myriad Pro Cond";
-    font-size: 4em;
-    height: 100px;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    font-size: 60px;
+    color: white;
+    line-height: 95px;
+    background: #f4645f;
+    border-bottom-right-radius: 4px ;
+    border-bottom-left-radius: 4px ;
 }
-i{
-    margin-left: 20px;
-
+.iconS i{
+    color: #a1a1a1;
+    margin-left: 10px;
 }
- .text1 a{
-    color: black !important;
-    text-decoration: none;
-}
-
- .nav{
-     font-family: "Adobe Song Std L";
-     font-size: 1.5em;
-     margin-top: 5%;
-
- }
-.nav-link{
-    display:block;
-    padding:.5rem 1rem;
-    color: grey;
-
-}
-.nav-link:focus,
-.nav-link:hover{
-    text-decoration:none;
-    color: #f4645f;
-    border:none;
+.searchLn input,
+.searchLn button{
+    border: none;
     background: none;
-}
-.nav-link .disabled{
-    color:#6c757d;
-}
-.subscript{
-    background: #F4645F;
-}
-.postImg{
 
-    height: 90%;
-    background: url("../img/laravel-craftsman-cli.jpg")  no-repeat;
-    background-size:cover;
 }
-.newsImg{
-    height: 200px;
-    background: url("../img/laravel-up-and-running-2nd-edition.png")  no-repeat;
-    background-size:contain;
+form{
+    width: 207px;
+    height: 63px;
 }
-.textNews{
-    background: brown;
+.searchLn input{
+    width: 132px;
+    height: 13px;
+    padding: 24px 0 24px 30px;
+    border-left: 1px solid #f5f5f5;
+}
+.searchLn button{
+    padding: 24px 30px 24px 0;
+}
+.iconS{
+    width: 250px;
+    padding-left: 2%;
+}
+.searchLn{
+    padding-right: 2%;
+}
+.log{
+    position: relative;
+    text-decoration-line: none;
+    color: #000;
+    width: 256px;
+    height: 147.078px;
+    text-align: center;
+    z-index: 100;
+}
+.log p {
+    font-size: .5625rem;
+    color: #8e8e8e;
+    letter-spacing: .2em;
+    font-family: Miriam Libre;
+    margin: 3px 0 0;
+}
+.log span{
+    color: black;
+}
+.log h4{
+    font-family: Miriam Libre;
+    margin: 20px 0 0;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    font-size: inherit;
+}
+.mainNav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+.mainNav a {
+    text-decoration: none;
+    color: #525252;
+}
+.mainNav a:hover {
+    text-decoration: none;
+    color: #e4606d;
+}
+.mainNav li {
+    margin-left: 30px;
+    font-size: 1.25rem;
 }
