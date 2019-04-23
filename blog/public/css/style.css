@@ -10,7 +10,7 @@ div .logoLN{
 .log .logoLN:hover{
     background: #f22c40;
 }
-section{
+.headerLn{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -66,12 +66,14 @@ form{
 }
 .log{
     position: relative;
-    text-decoration-line: none;
     color: #000;
     width: 256px;
     height: 147.078px;
     text-align: center;
     z-index: 100;
+}
+.mainHeader a{
+    text-decoration: none;
 }
 .log p {
     font-size: .5625rem;

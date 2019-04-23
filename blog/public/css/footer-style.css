@@ -1,0 +1,111 @@
+.footerLn{
+    background:#525252 ;
+    margin: 0 auto;
+}
+.twitter i,
+.facebook i,
+.insta i,
+.linkedin i{
+    color: #ffffff;
+}
+.twitter{
+    background: #55acee;
+}
+
+.facebook{
+    background: #3b5998;
+}
+.insta{
+    background: #a1a1a1;
+}
+.linkedin{
+    background: #0077b5;
+}
+.facebook,
+.twitter,
+.insta,
+.linkedin{
+    line-height: 16px;
+    margin-top: 3%;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.twitter:hover,
+.facebook:hover,
+.insta:hover ,
+.linkedin:hover{
+    background: #0a0a0a;
+}
+.footerLn .mainNav li{
+    margin-left: 20px;
+}
+.footerLn .twoNav .mainNav a{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 0.65rem;
+}
+
+.twoNav .mainNav li{
+    margin-left: 45px;
+
+}
+.threeNav .mainNav li{
+    margin-left: 52px;
+}
+.twoNav .mainNav li:first-child,
+.threeNav .mainNav li:first-child {
+    margin-left:0px;
+}
+.twoNav{
+    margin: 30px auto 20px;
+}
+.threeNav .mainNav a{
+    color: #a1a1a1;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 0.65rem;
+}
+
+.threeNav .imgCenter{
+    margin-top: 50px;
+    text-align: center;
+}
+.threeNav .imgCenter img {
+    height: 175px;
+}
+.threeNav p {
+    color: #3b3b3b;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+.imgCenter p a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+.twoNav .mainNav a:hover,
+.threeNav .mainNav a:hover,
+.imgCenter p a:hover {
+    color: #e4606d;
+}
+.lastBlock{
+   text-align: center;
+}
+.lastBlock .lineFoot{
+    border-bottom: 1px solid #8e8e8e ;
+    width: 75px;
+    margin: 0 auto;
+}
+.lastBlock .subTitle {
+    color: #ffffff;
+    font-size: .6875rem;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+.lastBlock .imgSubTitle{
+    margin-top:-20px;
+    width: 96px;
+}

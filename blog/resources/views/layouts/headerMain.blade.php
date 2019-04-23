@@ -1,4 +1,4 @@
-<div>
+<div class="mainHeader">
     <div class="rowRed"></div>
    <a href="" class="log">
         <div class="logoLN">LN</div>
@@ -6,7 +6,7 @@
        <p>THE <span>OFFICIAL</span> LARAVEL NEWS SOURCE</p>
     </a>
 </div>
-<section>
+<section class="headerLn">
     <div class="iconS">
         <a href=""><i class="fab fa-twitter"></i></a>
         <a href=""><i class="fab fa-facebook"></i></a>
@@ -19,7 +19,7 @@
         </form>
     </div>
 </section>
-<nav>
+<nav class="navigation11">
     <ul class="mainNav">
         <li><a href="">Blog</a></li>
         <li><a href="">Tutorials</a></li>
@@ -28,3 +28,4 @@
         <li><a href="">Newsletter</a></li>
     </ul>
 </nav>
+
