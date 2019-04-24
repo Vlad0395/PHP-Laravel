@@ -28,4 +28,10 @@
         <li><a href="">Newsletter</a></li>
     </ul>
 </nav>
+<div class="searchLn">
+    <form action="">
+        <input type="search" placeholder="SEARCH" >
+        <button><i class="fas fa-search"></i></button>
+    </form>
+</div>
 
