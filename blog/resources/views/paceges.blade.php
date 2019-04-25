@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-
+<header>
+    @include("layouts.header")
+</header>
 <footer class="footerLn">
     @include('layouts.footer')
 </footer>

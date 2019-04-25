@@ -1,6 +1,30 @@
+.headerOth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 .log-mini{
+
+    display: flex;
+    align-items: center;
+}
+.log-mini h4{
+    color:black;
+    font-size: 16px;
+    margin: 0;
 
 }
 .logoLN-mini{
+    margin: 10px;
     background:#f4645f;
+    width:40px;
+    height: 40px;
+    border-radius: 5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
+
