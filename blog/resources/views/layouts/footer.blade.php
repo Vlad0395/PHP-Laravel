@@ -13,7 +13,7 @@
         <li><a href="">Advertise</a></li>
         <li><a href="">Archive</a></li>
         <li><a href="">Jobs</a></li>
-        <li><a href="">Your account</a></li>
+        <li><a href="/login">Your account</a></li>
         <li><a href="">Contacts</a></li>
     </ul>
 </section>

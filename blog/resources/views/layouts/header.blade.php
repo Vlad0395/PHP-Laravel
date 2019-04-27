@@ -1,12 +1,12 @@
-<header class="headerOth">
+<header class="headerOth container">
     <div class="rowRed"></div>
-    <a href="" class="log-mini">
+    <a href="/" class="log-mini">
         <div class="logoLN-mini">LN</div>
         <h4>Laravel News</h4>
     </a>
     <nav class="navigation11">
         <ul class="mainNav">
-            <li><a href="">Blog</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="">Tutorials</a></li>
             <li><a href="">Packages</a></li>
             <li><a href="">Podcast</a></li>

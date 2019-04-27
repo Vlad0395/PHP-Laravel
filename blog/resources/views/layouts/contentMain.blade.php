@@ -3,7 +3,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                1
+               <div class="imgMain">
+                   <a href="">
+                       <img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="" style="width:100%">
+                       <div class="card">
+                           <span>NEWS</span>
+                           <h3>Allowing Users to send email with their own SMTP settings in Laravel</h3>
+                       </div>
+                   </a>
+               </div>
             </div>
             <div class="col-md-4">
                 <div class="row">

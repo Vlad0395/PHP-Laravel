@@ -3,6 +3,14 @@
     justify-content: space-between;
     align-items: center;
 
+
+}
+.headerOth a{
+    text-decoration: none;
+
+}
+.headerOth a:hover .logoLN-mini{
+background: #e3342f;
 }
 .log-mini{
 
@@ -18,13 +26,22 @@
 .logoLN-mini{
     margin: 10px;
     background:#f4645f;
-    width:40px;
-    height: 40px;
+    width:46px;
+    height: 46px;
     border-radius: 5%;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+
+}
+.headerOth .iconS{
+    width: 90px;
+    padding: 0;
 }
 
+.headerOth .mainNav a{
+    font-size: 1rem;
+    color:#a1a1a1;
+}

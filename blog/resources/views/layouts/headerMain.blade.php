@@ -1,6 +1,6 @@
 <div class="mainHeader">
     <div class="rowRed"></div>
-   <a href="" class="log">
+   <a href="/" class="log">
         <div class="logoLN">LN</div>
         <h4>Laravel News</h4>
        <p>THE <span>OFFICIAL</span> LARAVEL NEWS SOURCE</p>
@@ -21,17 +21,12 @@
 </section>
 <nav class="navigation11">
     <ul class="mainNav">
-        <li><a href="">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="">Tutorials</a></li>
         <li><a href="">Packages</a></li>
         <li><a href="">Podcast</a></li>
         <li><a href="">Newsletter</a></li>
     </ul>
 </nav>
-<div class="searchLn">
-    <form action="">
-        <input type="search" placeholder="SEARCH" >
-        <button><i class="fas fa-search"></i></button>
-    </form>
-</div>
+
 
