@@ -44,7 +44,7 @@ div .logoLN{
     background: none;
 
 }
-form{
+searchLN{
     width: 207px;
     height: 63px;
 }
@@ -110,4 +110,7 @@ form{
 .mainNav li {
     margin-left: 30px;
     font-size: 1.25rem;
+}
+.loginLN {
+    background: #ffffff;
 }

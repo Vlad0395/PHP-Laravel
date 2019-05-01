@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'BlogCar') }}</title>
+    <title>{{ config('app.name', 'LaravelNews') }}</title>
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -15,6 +15,7 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/content-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
 
 
@@ -44,7 +45,6 @@
 <content>
     @include('layouts.contentMain')
 </content>
-
 <footer class="footerLn">
     @include('layouts.footer')
 </footer>

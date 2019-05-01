@@ -1,0 +1,108 @@
+
+.sectionOne{
+margin-top: 5%;
+}
+
+.cards {
+    background: #2a2a2a;
+    padding: 10px 50px;
+}
+.cards span{
+    color: #f4645f;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+.cards h3{
+    color: #ffffff;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+
+}
+
+.imgMain a{
+    text-decoration: none;
+}
+.imgMain img{
+    width: 100%;
+}
+.form-control {
+    border: none;
+    background: none;
+}
+.cardMini {
+    height: 255px;
+    width: 330px;
+    }
+.contentSubscribe{
+    background:#f4645f;
+    padding: 0;
+
+}
+.contentSubscribe p {
+    font-size: 0.92rem;
+    color: #ffffff;
+
+    padding: 20px 24px 0px 0;
+    margin: 0 0 15px 30px ;
+}
+.contentSubscribe form{
+    padding: 0px 24px 20px 0;
+    margin-left: 30px ;
+}
+.headerSubscribe{
+    border-bottom: 1px solid rgba(249,249,249,0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px 20px 0;
+    margin-left: 30px ;
+}
+.headerSubscribe img {
+    width: 40px;
+    height: 22px;
+}
+.headerSubscribe h2{
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+}
+.contentSubscribe button{
+    /*border: 2px solid #d6514d;*/
+    /*background:#d6514d;*/
+    /*font-size: 0.8125rem;*/
+    /*color: #ffffff;*/
+    /*line-height: 1.2;*/
+    /*letter-spacing: .02em;*/
+    /*text-transform: uppercase;*/
+    /*padding: .9375rem 0rem;*/
+    /*border-radius: .25rem;*/
+    /*border-top-left-radius: 0;*/
+    /*border-bottom-left-radius: 0;*/
+
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    border: 2px solid #d6514d;
+    background-color: #d6514d;
+    font-size: .8125rem;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    padding: 15px;
+    margin-left: -2px;
+}
+.contentSubscribe input{
+    color: #a1a1a1;
+    border: 2px solid #e8e8e8;
+    padding: .9375rem .625rem;
+    font-weight: 600;
+    font-size: .6875rem;
+    letter-spacing: .1rem;
+    line-height: 1.2;
+    box-shadow: none;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    margin: 0;
+}

@@ -19,7 +19,7 @@
         <a href=""><i class="fab fa-linkedin-in"></i></a>
     </div>
     <div class="searchLn">
-        <form action="">
+        <form action="" class="searchLN">
             <input type="search" placeholder="SEARCH" >
             <button><i class="fas fa-search"></i></button>
         </form>
