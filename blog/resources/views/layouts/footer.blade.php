@@ -19,7 +19,7 @@
 </section>
 <section class="threeNav">
     <ul class="mainNav">
-        <li><a href="">News</a></li>
+        <li><a href="/news">News</a></li>
         <li><a href="">Tutorials</a></li>
         <li><a href="">Packages</a></li>
         <li><a href="">Books</a></li>

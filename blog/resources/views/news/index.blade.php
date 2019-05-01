@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="{{asset('css/header-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/news-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/content-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/sidebar-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!--fontwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>News</title>
 </head>
 <body>
-<header>
     @include('layouts.header')
-</header>
 <div class="container-fluid newsLn">
     <div class="container">
+        <h1>News</h1>
         <div class="row">
             <div class="col-md-8">
-                <h1>News</h1>
                 <div class="post">
                     <div class="postImg">
                         <img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="">

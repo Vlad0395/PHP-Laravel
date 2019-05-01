@@ -13,6 +13,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/header-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/content-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/sidebar-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
 
     <title>Document</title>
@@ -21,6 +23,16 @@
 <header>
     @include('layouts.header')
 </header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-4">
+            @include('layouts.sidebarRight')
+        </div>
+    </div>
+</div>
 <footer class="footerLn">
     @include('layouts.footer')
 </footer>
