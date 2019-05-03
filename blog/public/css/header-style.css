@@ -1,16 +1,18 @@
+.container-fluid{
+    background: #ffffff;
+}
 .headerOth{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 .headerOth a{
     text-decoration: none;
 
 }
 .headerOth a:hover .logoLN-mini{
-background: #e3342f;
+    background: #e3342f;
+    text-decoration: none;
 }
 .log-mini{
 
