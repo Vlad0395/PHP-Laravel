@@ -32,6 +32,8 @@ Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>'admin'], fun
 
 });
 
-Auth::routes();
+Route::group(['middleware'=>'auth'], function ()
+{
+    Route::get('/account', 'AccountController@index');
+});
 
-Route::get('/account', 'AccountController@index');

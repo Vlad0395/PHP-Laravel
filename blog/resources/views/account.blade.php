@@ -60,7 +60,23 @@
                 <div>Setting</div>
                 <div>
                     <a href="">Edit account</a>
-                    <a href="/logout">Logout</a>
+                    {{--<form action="/logout" method="POST">Logout</form>--}}
+                    {{----}}
+                    {{----}}
+                    <a href="#"
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                    >
+                        <i class="fa fa-fw fa-power-off"></i> {{ trans('log_out') }}
+                    </a>
+                    <form id="logout-form" action="{{ url(config('logout', '/logout')) }}" method="POST" style="display: none;">
+                        @if(config('logout_method'))
+                            {{ method_field(config('logout_method')) }}
+                        @endif
+                        {{ csrf_field() }}
+                    </form>
+
+
+
                 </div>
             </div>
         </div>
