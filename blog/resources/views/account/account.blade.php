@@ -48,7 +48,7 @@
         <div class="col-md-8">
             <div class="userWelcome">
                 <div class="accost">
-                    Hi, {{$users[0]->name}}
+                    Hi, {{Auth::user()->name}}
                 </div>
                 <div class="dashboard">
                     Welcome to your account dashboard

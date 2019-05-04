@@ -41,8 +41,8 @@
                     </div>
                     <div class="postContent">
                         <span class="label">News <span class="text-grey">/</span> <span class="text-bold">APRIL 12, 2019</span></span>
-                        <h2><a href="">{{$item->title}}</a></h2>
-                        <p>{{$item->description}}</p>
+                        <h2><a href="">{!! $item->title !!}</a></h2>
+                        <p>{!! ($item->description)!!}</p>
                         <a href="" class="readMore">Read more…</a>
                     </div>
                     <div class="postFooter">

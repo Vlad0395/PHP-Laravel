@@ -36,6 +36,8 @@ Route::group(['middleware'=>'auth'], function ()
 {
     Route::get('/account', 'AccountController@index');
     Route::get('/account/edit', 'AccountController@edit');
+    Route::post('/account/{id}', 'AccountController@update');
+
 
 });
 

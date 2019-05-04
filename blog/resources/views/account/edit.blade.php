@@ -25,9 +25,10 @@
 
     <script src="{{asset('js/app.js')}}"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>--}}
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -44,41 +45,43 @@
 <header>
     @include('layouts.header')
 </header>
+<div class="  message"></div>
 <div class="container account">
+
     <div class="row">
         <div class="col-md-8">
             <div class="userWelcome">
+
                 <div class="accost">
                    Edit your account
                 </div>
-                <form action="account/account" method="POST" class="form">
-                    <label for="your name">*Your Display Name</label>
-                    <input type="text" id="your name" value="{{$users[0]->name}}">
-                    <label for="email address">*E-Mail Address</label>
-                    <input type="text" id="email address" value="{{$users[0]->email}}">
-                    <label for="Short Bio">Short Bio</label>
-                    <textarea id="Short Bio"></textarea>
-                    <label for="twitter">Your Twitter</label>
-                    <input type="text" id="twitter" value="{{--$users[0]->twitter or ''--}}" placeholder="@LARAVELNEWS">
-                    <label for="facebook">Your Facebook UserName</label>
-                    <input type="text" id="facebook" value="{{--$users[0]->facebook or ''--}}">
-                    <label for="github">Your GitHub UserName</label>
-                    <input type="text" id="facebook" value="{{--$users[0]->github or ''--}}">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                    <label for="password">Leave blank to keep your current password</label>
-                    <label for="confirm password">Password</label>
-                    <input type="password" id="confirm password"><br>
-                    <button>Update</button>
-                </form>
+                <div class="container">
 
+                    <form action="/account/{{Auth::id()}}" method="POST" class="form">
+                        @csrf
+                        <input type="hidden" value="{{Auth::id()}}" id="user_id">
+                        <label for="your name">*Your Display Name</label>
+                        <input type="text" id="your name" name="name" value="{{$user->name}}">
+                        <label for="email address" >*E-Mail Address</label>
+                        <input type="text" id="email address " name="email" value="{{$user->email}}">
+                        <label for="Short Bio">Short Bio</label>
+                        <textarea id="Short Bio" cols="30" name="short_bio" rows="10">{{$user->short_bio}}</textarea>
+                        <label for="twitter">Your Twitter</label>
+                        <input type="text" id="twitter" name="twitter" value="{{$user->twitter}}" placeholder="@LARAVELNEWS">
+                        <label for="facebook">Your Facebook UserName</label>
+                        <input type="text" id="facebook" name="facebook" value="{{$user->facebook }}">
+                        <label for="github">Your GitHub UserName</label>
+                        <input type="text" id="github" name="github" value="{{$user->github}}">
+                        <button type="submit" class="buttonLN">Update</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="setting">
                 <div class="sett">Setting</div>
                 <div class="logoutEdit">
-                    <a href="/account/edit"><i class="fas fa-user-edit"></i>Edit Your Account2</a><br>
+                    <a href="/account/edit"><i class="fas fa-user-edit"></i>Edit Your Account</a><br>
                     <a href="#"
                        onclick="event.preventDefault();
                        document.getElementById('logout-form').submit();"
@@ -102,5 +105,35 @@
 <footer class="footerLn">
     @include('layouts.footer')
 </footer>
+<script>
+    $(document).ready(function () {
+            $( ".form" ).on( "submit", function(e) {
+            e.preventDefault();
+            console.log(this);
+            let id = $('#user_id').val();
+            let data=$(this).serialize();
+            $.ajax({
+                type:'POST',
+                url:"/account/"+id,
+                data:data,
+                success:function () {
+                    $('.message').css('display','block')
+                },
+                error:function () {
+                    $('.message').css('display','block')
+                    $('.message').css('background','#9e0505')
+
+                }
+            })
+        });
+        $(document).ajaxSuccess(function(e, xhr,options) {
+            $( ".message" ).text( "Your account is updated" );
+        });
+        $( document ).ajaxError(function() {
+            $( ".message" ).text( "Triggered ajaxError handler." );
+        });
+    });
+</script>
+
 </body>
 </html>

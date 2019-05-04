@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Item;
+use Illuminate\Support\Facades\Auth;
 
 class ItemController extends Controller
 {
@@ -28,6 +29,7 @@ class ItemController extends Controller
     public function create()
     {
         $news = new Item();
+        $news->author = Auth::user()->name;
         return view('admin.news.create' , compact('news'));
     }
 
