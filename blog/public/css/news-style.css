@@ -1,5 +1,6 @@
 .post{
     margin: 0 0 3%;
+    box-shadow: 0 1px 5px #dcdcdc;
 }
 .postImg img{
     width: 100%;
@@ -28,6 +29,9 @@
 }
 .postContent a {
     color:#f4645f;
+}
+.readMore {
+    font-size: 0.75rem;
 }
 .postContent a:hover {
     text-decoration: none;

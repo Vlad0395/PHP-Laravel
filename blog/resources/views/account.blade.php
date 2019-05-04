@@ -57,16 +57,14 @@
         </div>
         <div class="col-md-4">
             <div class="setting">
-                <div>Setting</div>
-                <div>
-                    <a href="">Edit account</a>
-                    {{--<form action="/logout" method="POST">Logout</form>--}}
-                    {{----}}
-                    {{----}}
+                <div class="sett">Setting</div>
+                <div class="logoutEdit">
+                    <a href=""><i class="fas fa-user-edit"></i>Edit Your Account</a><br>
                     <a href="#"
-                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                       onclick="event.preventDefault();
+                       document.getElementById('logout-form').submit();"
                     >
-                        <i class="fa fa-fw fa-power-off"></i> {{ trans('log_out') }}
+                        <i class="fa fa-fw fa-power-off"></i> {{ trans('Logout') }}
                     </a>
                     <form id="logout-form" action="{{ url(config('logout', '/logout')) }}" method="POST" style="display: none;">
                         @if(config('logout_method'))

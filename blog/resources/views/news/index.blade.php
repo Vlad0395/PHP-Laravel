@@ -33,7 +33,7 @@
                         <span class="label">News <span class="text-grey">/</span> <span class="text-bold">APRIL 12, 2019</span></span>
                         <h2><a href="">Laravel Craftsman CLI</a></h2>
                         <p>Laravel Craftsman is a CLI for easily crafting Laravel assets for any project (artisan make on steroids) by Mike Erickson.</p>
-                        <a href="">Read more…</a>
+                        <a href="" class="readMore">Read more…</a>
                     </div>
                     <div class="postFooter">
                         <img src="{{asset('img/team_1.jpg')}}" alt="">

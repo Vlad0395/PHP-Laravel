@@ -1,4 +1,4 @@
-<section >
+<section class="oneSoc" >
     <ul class="mainNav">
         <li class="twitter"><a href=""><i class="fab fa-twitter "></i></a></li>
         <li class="facebook"><a href=""><i class="fab fa-facebook-square "></i></a></li>

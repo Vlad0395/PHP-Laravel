@@ -7,8 +7,9 @@ div .logoLN{
     position: relative;
     z-index: 3;
 }
-.log .logoLN:hover{
-    background: #f22c40;
+.mainHeader a:hover .logoLN{
+    background: #e3342f;
+    text-decoration: none;
 }
 .headerLn{
     display: flex;
@@ -72,8 +73,9 @@ searchLN{
     text-align: center;
     z-index: 100;
 }
-.mainHeader a{
+.mainHeader a:hover{
     text-decoration: none;
+    color: #000;
 }
 .log p {
     font-size: .5625rem;
@@ -143,7 +145,43 @@ searchLN{
     padding: 20px 24px 20px 0;
     margin:0 0 8px 30px;
     border-bottom: 1px solid #e8e8e8;
+    font-size: 1.75rem;
 }
 .dashboard{
     padding: 30px 20px;
+}
+.setting{
+    background: #ffffff;
+    margin: 15px 0;
+
+}
+.logoutEdit{
+    padding: 20px 30px;
+}
+.sett{
+    padding: 20px 24px 20px 0;
+    margin: 0 0 8px 30px;
+    border-bottom: 1px solid#e8e8e8;
+    font-size: 1.55rem;
+    letter-spacing: 1px;
+}
+.setting a {
+    color:#e4606d;
+
+}
+.setting a:hover {
+    color:#D95175;
+    text-decoration: none;
+}
+
+.setting  i{
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
+.logout{
+    margin-bottom: 15px;
+}
+.userWelcome,
+.setting{
+    box-shadow: 0 1px 5px #dcdcdc;
 }
