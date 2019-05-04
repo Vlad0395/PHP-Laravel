@@ -42,7 +42,8 @@ class ItemController extends Controller
         $news = new Item();
         $news->title = $request->title;
         $news->description = $request->description;
-//        $news->imgPath = $request->filepath;
+        $news->author = $request->author;
+        $news->imgPath = $request->filepath;
         $news->save();
         return redirect('/admin/news');
     }

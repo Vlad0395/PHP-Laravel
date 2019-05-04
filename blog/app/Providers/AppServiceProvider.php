@@ -37,10 +37,6 @@ class AppServiceProvider extends ServiceProvider
                 'text'=>'Add News',
                 'url'=>'/admin/news/create',
             ]);
-            $event->menu->add([
-                'text'=>'Add Comment',
-                'url'=>'/admin/comments/create',
-            ]);
             $event->menu->add('Browse pages');
             $event->menu->add([
                 'text'=>'Category',

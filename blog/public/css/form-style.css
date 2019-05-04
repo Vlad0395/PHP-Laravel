@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input ,
+.form label,
+.form textarea{
+
+    width: 60%;
+
+}
+.form input,
+.form textarea{
+    background-color: #fff;
+    color: #a1a1a1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border-color: #e8e8e8;
+    font-family: Miriam Libre;
+    font-weight: 600;
+    font-size: .6875rem;
+    letter-spacing: .1rem;
+    line-height: 1.2;
+    box-shadow: none;
+}

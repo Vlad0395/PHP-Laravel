@@ -10,7 +10,7 @@ class AccountController extends Controller
 {
     public function index(){
         $users = User::all();
-        return view('account', compact('users'));
+        return view('account/account', compact('users'));
     }
     public function store(Request $request)
     {
@@ -19,6 +19,10 @@ class AccountController extends Controller
         $users = User::all();
         $users->name = $request->name;
         $users->save();
-        return redirect('/account');
+        return redirect('/account/account');
+    }
+    public function edit(){
+        $users = User::all();
+        return view('account/edit', compact('users'));
     }
 }

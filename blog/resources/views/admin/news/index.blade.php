@@ -19,6 +19,7 @@
             <th>
                 description
             </th>
+            <th>img</th>
             <th>
                 Action
             </th>
@@ -36,9 +37,9 @@
                 <td>
                     {{$item->description}}
                 </td>
-                {{--<td>--}}
-                    {{--<img src="{{$item->imgPath}}" alt="{{$item->imgPath}}" class="img-responsive">--}}
-                {{--</td>--}}
+                <td>
+                    <img src="{{$item->imgPath}}" alt="{{$item->imgPath}} "  class="img-responsive" style="width: 20%;">
+                </td>
                 <td>
                     <a href="#" data-id = "{{$item->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>
                 </td>

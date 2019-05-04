@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Blog</b>Car',
+    'logo' => 'Laravel-News',
 
-    'logo_mini' => '<b>B</b>Car',
+    'logo_mini' => 'Laravel-News',
 
     /*
     |--------------------------------------------------------------------------

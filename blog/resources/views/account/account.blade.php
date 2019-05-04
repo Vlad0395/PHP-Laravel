@@ -59,7 +59,7 @@
             <div class="setting">
                 <div class="sett">Setting</div>
                 <div class="logoutEdit">
-                    <a href=""><i class="fas fa-user-edit"></i>Edit Your Account</a><br>
+                    <a href="/account/edit"><i class="fas fa-user-edit"></i>Edit Your Account</a><br>
                     <a href="#"
                        onclick="event.preventDefault();
                        document.getElementById('logout-form').submit();"

@@ -23,22 +23,32 @@
 <div class="container-fluid newsLn">
     <div class="container">
         <h1>News</h1>
+        @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <div class="row">
             <div class="col-md-8">
+                @foreach($news as $item)
                 <div class="post">
                     <div class="postImg">
-                        <img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="">
+                        <img src="{{asset($item->imgPath)}}" alt="{{$item->imgPath}}">
                     </div>
                     <div class="postContent">
                         <span class="label">News <span class="text-grey">/</span> <span class="text-bold">APRIL 12, 2019</span></span>
-                        <h2><a href="">Laravel Craftsman CLI</a></h2>
-                        <p>Laravel Craftsman is a CLI for easily crafting Laravel assets for any project (artisan make on steroids) by Mike Erickson.</p>
+                        <h2><a href="">{{$item->title}}</a></h2>
+                        <p>{{$item->description}}</p>
                         <a href="" class="readMore">Read more…</a>
                     </div>
                     <div class="postFooter">
                         <img src="{{asset('img/team_1.jpg')}}" alt="">
                         <div class="postAuthor">
-                            <h4>by <a href="">Andrés Santibáñez</a></h4>
+                            <h4>by <a href="">{{$item->author}}</a></h4>
                             <div class="authorLink">
                                 <span><a href=""><i class="fab fa-twitter"></i></a></span>
                                 <span><a href=""><i class="fab fa-facebook-square"></i></a></span>
@@ -47,6 +57,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
             <div class="col-md-4">
                 @include('layouts.sidebarRight')

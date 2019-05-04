@@ -35,5 +35,7 @@ Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>'admin'], fun
 Route::group(['middleware'=>'auth'], function ()
 {
     Route::get('/account', 'AccountController@index');
+    Route::get('/account/edit', 'AccountController@edit');
+
 });
 
