@@ -18,10 +18,6 @@
     <input id="thumbnail" class="form-control" type="text" name="filepath" value="{{$news->imgPath}}">
 
 </div>
-<img id="holder" style="margin-top:15px;max-height:100px; "src = "{{$news->imgPath or ''}} ">
-<div class="form-group">
-    {!! Form::label('author', 'Author') !!}
+<img id="holder" style="margin-top:15px;max-height:100px; "src = "{{$news->imgPath}} ">
 
-    {!! Form::text('author',$news->author,['class'=>'form-control']) !!}
-</div>
 {!! Form::submit('Save',['class'=>'btn btn-primary'])!!}

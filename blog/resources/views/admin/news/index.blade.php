@@ -41,7 +41,7 @@
                 <td>
                     <img src="{{$item->imgPath}}" alt="{{$item->imgPath}} "  class="img-responsive" style="width: 20%;">
                 </td>
-                <td>{{$item->author}}</td>
+                <td>{{$item->user->name}}</td>
                 <td>
                     <a href="#" data-id = "{{$item->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>
                 </td>

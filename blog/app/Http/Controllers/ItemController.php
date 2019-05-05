@@ -5,12 +5,18 @@ namespace App\Http\Controllers;
 use App\Item;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ItemController extends Controller
 {
     //
     public function index(){
         $news = Item::paginate(5);
+        foreach ($news as &$item) {
+            $createdAt = Carbon::parse($item['created_at']);
+            $item['publish_date'] = $createdAt->format('M, d Y');
+        }
+
         return view('news/index', compact('news'));
     }
     public function store(Request $request)

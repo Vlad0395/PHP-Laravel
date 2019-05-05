@@ -40,7 +40,7 @@
                         <img src="{{asset($item->imgPath)}}" alt="{{$item->imgPath}}">
                     </div>
                     <div class="postContent">
-                        <span class="label">News <span class="text-grey">/</span> <span class="text-bold">APRIL 12, 2019</span></span>
+                        <span class="label">News <span class="text-grey">/</span> <span class="text-bold">{{$item->publish_date}}</span></span>
                         <h2><a href="">{!! $item->title !!}</a></h2>
                         <p>{!! ($item->description)!!}</p>
                         <a href="" class="readMore">Read more…</a>
@@ -48,7 +48,7 @@
                     <div class="postFooter">
                         <img src="{{asset('img/team_1.jpg')}}" alt="">
                         <div class="postAuthor">
-                            <h4>by <a href="">{{$item->author}}</a></h4>
+                            <h4>by <a href="">{{$item->user->name}}</a></h4>
                             <div class="authorLink">
                                 <span><a href=""><i class="fab fa-twitter"></i></a></span>
                                 <span><a href=""><i class="fab fa-facebook-square"></i></a></span>

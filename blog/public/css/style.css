@@ -185,3 +185,25 @@ searchLN{
 .setting{
     box-shadow: 0 1px 5px #dcdcdc;
 }
+.mainPageJobs{
+    background: #009689 !important;
+}
+.linkJobs{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9% 10%;
+}
+.mainPageJobs a{
+    font-weight: normal;
+}
+.mainPageJobs a:hover{
+    color: #ffffff;
+}
+.linkJobs a{
+    color: #00d7cc;
+}
+.linkJobs a:hover{
+    color: #2A2A55;
+    text-decoration: none;
+}
+

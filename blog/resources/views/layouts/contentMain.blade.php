@@ -40,7 +40,24 @@
         <div class="row">
             <div class="col-md-4 cardMini">4</div>
             <div class="col-md-4 cardMini">5</div>
-            <div class="col-md-4 cardMini">6</div>
+            <div class="col-md-4 cardMini ">
+                <div class="laravelJob mainPageJobs ">
+                    <div class="lJob ">
+                        <h2>Laravel Jobs</h2>
+                        <img src="{{asset('img/icon-chair.png')}}" alt="">
+                    </div>
+                    <br>
+                    <div>
+                        <dl>
+                            <dt><a href="">Laravel + VueJS Developer</a></dt>
+                            <br>
+                            <dt><a href="">Graduate/junior PHP DEvwloper</a></dt>
+                        </dl>
+                        <div class="linkJobs">
+                            <a href="">View more Jobs</a>
+                            <a href="">Post a Job</a>
+                        </div>
+            </div>
         </div>
     </div>
 </section>

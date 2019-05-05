@@ -36,12 +36,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
     public function roles()
     {
         return $this->belongsToMany('App\Role', 'user_roles','user_id','role_id');
     }
+
     public function isAdmin()
     {
         return in_array('admin' ,array_pluck($this->roles->toArray(), 'name'));
+    }
+
+    public function news()
+    {
+        return $this->hasMany('App\Item');
     }
 }

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/content-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/sidebar-style.css')}}">
 
 
     <!--script-->

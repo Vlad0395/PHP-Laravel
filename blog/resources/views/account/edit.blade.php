@@ -59,9 +59,9 @@
 
                     <form action="/account/{{Auth::id()}}" method="POST" class="form">
                         @csrf
-                        <input type="hidden" value="{{Auth::id()}}" id="user_id">
+                        <input type="hidden" value="{{Auth::id()}}" id="user_id" required>
                         <label for="your name">*Your Display Name</label>
-                        <input type="text" id="your name" name="name" value="{{$user->name}}">
+                        <input type="text" id="your name" name="name" value="{{$user->name}}" required>
                         <label for="email address" >*E-Mail Address</label>
                         <input type="text" id="email address " name="email" value="{{$user->email}}">
                         <label for="Short Bio">Short Bio</label>

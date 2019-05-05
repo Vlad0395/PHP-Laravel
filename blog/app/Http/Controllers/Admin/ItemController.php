@@ -29,7 +29,7 @@ class ItemController extends Controller
     public function create()
     {
         $news = new Item();
-        $news->author = Auth::user()->name;
+
         return view('admin.news.create' , compact('news'));
     }
 
@@ -44,7 +44,7 @@ class ItemController extends Controller
         $news = new Item();
         $news->title = $request->title;
         $news->description = $request->description;
-        $news->author = $request->author;
+        $news->user_id = Auth::id();
         $news->imgPath = $request->filepath;
         $news->save();
         return redirect('/admin/news');
