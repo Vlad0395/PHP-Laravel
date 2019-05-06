@@ -16,6 +16,7 @@ class ItemController extends Controller
      */
     public function index()
     {
+
         $news = Item::all();
         return view('admin.news.index',compact('news'));
 
@@ -44,6 +45,7 @@ class ItemController extends Controller
         $news = new Item();
         $news->title = $request->title;
         $news->description = $request->description;
+        $news->text = $request->text;
         $news->user_id = Auth::id();
         $news->imgPath = $request->filepath;
         $news->save();
@@ -82,7 +84,13 @@ class ItemController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $news =Item::find($id);
+        $news->title = $request->title;
+        $news->description = $request->description;
+        $news->text = $request->text;
+        $news->imgPath = $request->filepath;
+        $news->save();
+        return redirect('/admin/news');
     }
 
     /**

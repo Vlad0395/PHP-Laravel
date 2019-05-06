@@ -191,7 +191,7 @@ searchLN{
 .linkJobs{
     display: flex;
     justify-content: space-between;
-    padding: 0 9% 10%;
+    padding: 0 9% 11.5%;
 }
 .mainPageJobs a{
     font-weight: normal;

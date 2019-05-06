@@ -4,8 +4,12 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('slug', 'New Description')  !!}
-    {!! Form::textarea('description',null,['class'=>'form-control'])!!}
+    {!! Form::label('description', 'New description')  !!}
+    {!! Form::textarea('description',null,['class'=>'form-control'] ,['rows'=>'10'])!!}
+</div><div class="form-group">
+
+    {!! Form::label('text', 'Text news')  !!}
+    {!! Form::textarea('text',null,['class'=>'form-control'])!!}
 </div>
 
 <div class="input-group">

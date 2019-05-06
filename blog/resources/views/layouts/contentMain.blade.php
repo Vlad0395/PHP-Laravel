@@ -25,23 +25,52 @@
                             <form action="" class="form-control">
                                 <input type="email" placeholder="EMAIL ADDRESS">
                                 <button>Subscribe</button>
-
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="row cardMini">
                     <div class="col-md-12">
-                        3
+                        <div class="imgOtherNews">
+                            <a href="">
+                                <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">
+                                <div class="cards">
+                                    <span>NEWS</span>
+                                    <h3>Laravel Mix Alias</h3>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 cardMini">4</div>
-            <div class="col-md-4 cardMini">5</div>
+            <div class="col-md-4 cardMini">
+                <div class="imgOtherNews">
+                    <a href="">
+                        <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">
+                        <div class="cards">
+                            <span>NEWS</span>
+                            <h3>Laravel Mix Alias</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 cardMini">
+                <div class="imgOtherNews">
+                    <a href="">
+                        {{--<img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
+                        <img src="{{asset($news[0]->imgPath)}}" alt="">
+                        <div class="cards">
+                            <span>NEWS</span>
+                            <h3>Laravel Mix Alias</h3>
+                            {{--<h3>{{asset($news[0]->title)}}</h3>--}}
+                        </div>
+                    </a>
+                </div>
+            </div>
             <div class="col-md-4 cardMini ">
-                <div class="laravelJob mainPageJobs ">
+                <div class="imgOtherJobs ">
                     <div class="lJob ">
                         <h2>Laravel Jobs</h2>
                         <img src="{{asset('img/icon-chair.png')}}" alt="">
@@ -57,12 +86,36 @@
                             <a href="">View more Jobs</a>
                             <a href="">Post a Job</a>
                         </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="partners">
+    <div class="partners">
+        <div class="titlePartners">
+            <span>Laravel news partners</span>
+        </div>
+        <div class="logoPartnersMain container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href=""><img src="{{asset('img/honeybadger-clear.png')}}" alt=""></a>
+                    <a href=""><img src="{{asset('img/larajobs-logo.png')}}" alt=""></a>
+                    <a href=""><img src="{{asset('img/laravel-shift.png')}}" alt=""></a>
+                    <a href=""><img src="{{asset('img/nomadlogo.png')}}" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href=""><img src="{{asset('img/ottomatik.png')}}" alt=""></a>
+                    <a href=""><img src="{{asset('img/ringcentral.png')}}" alt=""></a>
+                    <a href=""><img src="{{asset('img/vueschool.png')}}" alt=""></a>
+                </div>
+            </div>
 
+        </div>
+    </div>
 </section>
 <section class="Latest News container">
     <div class="row">

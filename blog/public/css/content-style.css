@@ -29,13 +29,10 @@ margin-top: 5%;
     border: none;
     background: none;
 }
-.cardMini {
-    height: 255px;
-    width: 330px;
-    }
+
 .contentSubscribe{
     background:#f4645f;
-    padding: 0;
+    padding: 0 0 33px;
 
 }
 .contentSubscribe p {
@@ -69,18 +66,6 @@ margin-top: 5%;
     margin: 0;
 }
 .contentSubscribe button{
-    /*border: 2px solid #d6514d;*/
-    /*background:#d6514d;*/
-    /*font-size: 0.8125rem;*/
-    /*color: #ffffff;*/
-    /*line-height: 1.2;*/
-    /*letter-spacing: .02em;*/
-    /*text-transform: uppercase;*/
-    /*padding: .9375rem 0rem;*/
-    /*border-radius: .25rem;*/
-    /*border-top-left-radius: 0;*/
-    /*border-bottom-left-radius: 0;*/
-
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
     border: 2px solid #d6514d;
@@ -105,4 +90,64 @@ margin-top: 5%;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     margin: 0;
+}
+
+.imgOtherNews{
+    margin-top: 15px;
+
+}
+.cardMini{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cardMini .col-md-12,
+.cardMini .col-md-4{
+    padding: 0;
+}
+.imgOtherNews img{
+    width: 100%;
+}
+.imgOtherNews .cards{
+    position: relative;
+    top: -27px;
+    padding-bottom: 45px;
+}
+.imgOtherNews span{
+    font-size: .6875rem;
+}
+.imgOtherNews h3{
+    font-size: 1rem;
+}
+.imgOtherJobs{
+    background: #009689 !important;
+    margin-top: 15px;
+
+
+}
+.imgOtherJobs img{
+    margin-top: 15px;
+}
+.imgOtherJobs .lJob{
+
+    padding: 10px 24px 10px 0;
+}
+.partners{
+    padding: 0 0 2%;
+}
+.partners .row{
+    margin-bottom: 3%;
+}
+.partners .titlePartners{
+    text-align: center;
+    margin-bottom: 3%;
+
+}.partners .titlePartners span{
+    position: relative;
+     left: 0%;
+    background: #F8FAFC;
+
+
+}
+.logoPartnersMain{
+   text-align: center;
 }

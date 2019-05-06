@@ -41,9 +41,9 @@
                     </div>
                     <div class="postContent">
                         <span class="label">News <span class="text-grey">/</span> <span class="text-bold">{{$item->publish_date}}</span></span>
-                        <h2><a href="">{!! $item->title !!}</a></h2>
+                        <h2><a href="news/{!! $item->id!!}">{!! $item->title !!}</a></h2>
                         <p>{!! ($item->description)!!}</p>
-                        <a href="" class="readMore">Read more…</a>
+                        <a href="news/{!! $item->id!!}" class="readMore">Read more…</a>
                     </div>
                     <div class="postFooter">
                         <img src="{{asset('img/team_1.jpg')}}" alt="">
@@ -58,6 +58,7 @@
                     </div>
                 </div>
                 @endforeach
+                    {{$news->links()}}
             </div>
             <div class="col-md-4">
                 @include('layouts.sidebarRight')
@@ -65,6 +66,7 @@
         </div>
     </div>
 </div>
+
 <footer class="footerLn">
     @include('layouts.footer')
 </footer>

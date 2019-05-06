@@ -15,7 +15,8 @@
             </ul>
         </div>
     @endif
-    {!! Form::model($news, ['url'=>'/admin/news'])!!}
+    {!! Form::model($news, ['url'=>'/admin/news/'.$news->id,'method'=>'PUT'])!!}
+    @csrf
     @include('admin.news.form')
     {!! Form::close() !!}
 @stop
@@ -29,7 +30,7 @@
             filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
         };
 
-        CKEDITOR.replace( 'description' , options);
+        CKEDITOR.replace( 'text' , options);
     </script>
     <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
     <script>
