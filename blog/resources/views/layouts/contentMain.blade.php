@@ -4,11 +4,13 @@
         <div class="row">
             <div class="col-md-8">
                <div class="imgMain">
-                   <a href="">
-                       <img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="">
+                   <a href="news/{{$main->id}}">
+                       {{--<img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="">--}}
+                       <img src="{{asset($main->imgPath)}}" alt="">
                        <div class="cards">
                            <span>NEWS</span>
-                           <h3>Allowing Users to send email with their own SMTP settings in Laravel</h3>
+                           {{--<h3>Allowing Users to send email with their own SMTP settings in Laravel</h3>--}}
+                           <h3>{{$main->title}}</h3>
                        </div>
                    </a>
                </div>
@@ -32,11 +34,13 @@
                 <div class="row cardMini">
                     <div class="col-md-12">
                         <div class="imgOtherNews">
-                            <a href="">
-                                <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">
+                            <a href="news/{{$rightSideItem->id}}">
+                                {{--<img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
+                                <img src="{{asset($rightSideItem->imgPath)}}" alt="">
                                 <div class="cards">
                                     <span>NEWS</span>
-                                    <h3>Laravel Mix Alias</h3>
+                                    {{--<h3>Laravel Mix Alias</h3>--}}
+                                    <h3>{{$rightSideItem->title}}</h3>
                                 </div>
                             </a>
                         </div>
@@ -45,30 +49,35 @@
             </div>
         </div>
         <div class="row">
+            @foreach($bottomItems as &$item)
             <div class="col-md-4 cardMini">
                 <div class="imgOtherNews">
-                    <a href="">
-                        <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">
+                    <a href="news/{{$item->id}}">
+{{--                        <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
+                        <img src="{{asset($item->imgPath)}}" alt="">
                         <div class="cards">
                             <span>NEWS</span>
-                            <h3>Laravel Mix Alias</h3>
+                            {{--<h3>Laravel Mix Alias</h3>--}}
+                            <h3>{{$item->title}}</h3>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-md-4 cardMini">
-                <div class="imgOtherNews">
-                    <a href="">
+            @endforeach
+            {{--<div class="col-md-4 cardMini">--}}
+                {{--<div class="imgOtherNews">--}}
+                    {{--<a href="">--}}
                         {{--<img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
-                        <img src="{{asset($news[0]->imgPath)}}" alt="">
-                        <div class="cards">
-                            <span>NEWS</span>
-                            <h3>Laravel Mix Alias</h3>
+                        {{--{{dd($news)}}--}}
+                        {{--<img src="{{asset($news[0]->imgPath)}}" alt="">--}}
+                        {{--<div class="cards">--}}
+                            {{--<span>NEWS</span>--}}
+                            {{--<h3>Laravel Mix Alias</h3>--}}
                             {{--<h3>{{asset($news[0]->title)}}</h3>--}}
-                        </div>
-                    </a>
-                </div>
-            </div>
+                        {{--</div>--}}
+                    {{--</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
             <div class="col-md-4 cardMini ">
                 <div class="imgOtherJobs ">
                     <div class="lJob ">

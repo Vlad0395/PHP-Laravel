@@ -25,9 +25,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $news = Item::paginate(4);
-
-        return view('main',compact('news'));
+        $rightSideItem = Item::orderBy('id', 'desc')->skip(1)->take(1)->first();
+        $bottomItems = Item::orderBy('id', 'desc')->skip(2)->take(2)->get ();
+        $main = Item::orderBy('id', 'desc')->take(1)->first();
+        return view('main',compact('rightSideItem','bottomItems','main'));
     }
 
     public function category($slug)
@@ -38,10 +39,6 @@ class HomeController extends Controller
     }
     public function store(Request $request)
     {
-        $news = new Item();
-        $news->title = $request->title;
-        $news->imgPath = $request->filepath;
-        $news->save();
-        return redirect('/');
+
     }
 }

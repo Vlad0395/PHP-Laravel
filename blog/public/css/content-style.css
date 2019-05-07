@@ -2,10 +2,14 @@
 .sectionOne{
 margin-top: 5%;
 }
-
+imgMain{
+    height: 100%;
+    width: 100%;
+}
 .cards {
     background: #2a2a2a;
     padding: 10px 50px;
+    height: 122px;
 }
 .cards span{
     color: #f4645f;
@@ -19,9 +23,11 @@ margin-top: 5%;
 
 }
 
-.imgMain a{
+.imgMain a:hover,
+.imgOtherNews a:hover{
     text-decoration: none;
 }
+
 .imgMain img{
     width: 100%;
 }
@@ -110,7 +116,9 @@ margin-top: 5%;
 .imgOtherNews .cards{
     position: relative;
     top: -27px;
-    padding-bottom: 45px;
+    padding:5% 5% 10%;
+    height: 50px;
+    box-sizing: content-box;
 }
 .imgOtherNews span{
     font-size: .6875rem;

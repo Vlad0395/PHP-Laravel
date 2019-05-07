@@ -10,13 +10,13 @@ class ItemController extends Controller
 {
     //
     public function index(){
-        $news = Item::Paginate(5);
+
+        $news = Item::orderBy('created_at', 'desc')->Paginate(5);
 
         foreach ($news as &$item) {
             $createdAt = Carbon::parse($item['created_at']);
             $item['publish_date'] = $createdAt->format('M d, Y');
         }
-
         return view('news/index', compact('news'));
     }
     public function store(Request $request)
