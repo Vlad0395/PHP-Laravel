@@ -43,11 +43,67 @@
                 </td>
                 <td>{{$item->user->name}}</td>
                 <td>
-                    <a href="#" data-id = "{{$item->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>
+                    {{--<a href="#" data-id = "{{$item->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>--}}
+                    {{--<form action="" id="deleteNews" data-id="{{$item->id}}">--}}
+                        {{--@csrf--}}
+                        {{--<button type="submit" >--}}
+                            {{--DELETE--}}
+                        {{--</button>--}}
+
+                    {{--</form>--}}
+                 <a href="#" data-id="{{ $item->id }}" class="delete">delete</a>
+
                 </td>
             </tr>
             @endforeach
             </tbody>
     </table>
 
+@stop
+@section('js')
+    {{--<script>--}}
+    {{--$(document).ready(function () {--}}
+        {{--$("#deleteNews").on('submit',(function(){--}}
+            {{--var id = $(this).data("id");--}}
+            {{--console.log(id);--}}
+            {{--$.ajax(--}}
+                {{--{--}}
+                    {{--url: "news/"+id,--}}
+                    {{--type: 'DELETE',--}}
+                    {{--success: function ()--}}
+                    {{--{--}}
+                        {{--console.log("it Work");--}}
+                    {{--},--}}
+                    {{--error: function () {--}}
+                        {{--console.log("It failed");--}}
+                    {{--}--}}
+                {{--});--}}
+            {{--debugger;--}}
+
+        {{--}));--}}
+    {{--})--}}
+
+    {{--</script>--}}
+    <script>
+        $(document).ready( function(){
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $('#myTable').on('click', '.delete', function(e){
+                e.preventDefault();
+                let id = $(this).attr('data-id');
+                let elem = $(this);
+                console.log(elem,'elem')
+                $.ajax({
+                    url:'news/'+id,
+                    type:'DELETE',
+                    success: function(){
+                        elem.parents('tr').remove()
+                    }
+                });
+            });
+        });
+    </script>
 @stop

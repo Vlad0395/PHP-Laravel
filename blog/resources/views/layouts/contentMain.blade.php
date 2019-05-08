@@ -53,31 +53,15 @@
             <div class="col-md-4 cardMini">
                 <div class="imgOtherNews">
                     <a href="news/{{$item->id}}">
-{{--                        <img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
                         <img src="{{asset($item->imgPath)}}" alt="">
                         <div class="cards">
                             <span>NEWS</span>
-                            {{--<h3>Laravel Mix Alias</h3>--}}
                             <h3>{{$item->title}}</h3>
                         </div>
                     </a>
                 </div>
             </div>
             @endforeach
-            {{--<div class="col-md-4 cardMini">--}}
-                {{--<div class="imgOtherNews">--}}
-                    {{--<a href="">--}}
-                        {{--<img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
-                        {{--{{dd($news)}}--}}
-                        {{--<img src="{{asset($news[0]->imgPath)}}" alt="">--}}
-                        {{--<div class="cards">--}}
-                            {{--<span>NEWS</span>--}}
-                            {{--<h3>Laravel Mix Alias</h3>--}}
-                            {{--<h3>{{asset($news[0]->title)}}</h3>--}}
-                        {{--</div>--}}
-                    {{--</a>--}}
-                {{--</div>--}}
-            {{--</div>--}}
             <div class="col-md-4 cardMini ">
                 <div class="imgOtherJobs ">
                     <div class="lJob ">

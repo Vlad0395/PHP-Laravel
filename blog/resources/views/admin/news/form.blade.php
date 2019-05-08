@@ -4,8 +4,8 @@
 </div>
 
 <div class="form-group">
-    {!! Form::label('description', 'New description')  !!}
-    {!! Form::textarea('description',null,['class'=>'form-control'] ,['rows'=>'10'])!!}
+    {!! Form::label('description', 'Description')  !!}
+    {!! Form::text('description',null,['class'=>'form-control'] ,['rows'=>'10'])!!}
 </div><div class="form-group">
 
     {!! Form::label('text', 'Text news')  !!}
@@ -22,6 +22,6 @@
     <input id="thumbnail" class="form-control" type="text" name="filepath" value="{{$news->imgPath}}">
 
 </div>
-<img id="holder" style="margin-top:15px;max-height:100px; "src = "{{$news->imgPath}} ">
+<img id="holder" style="margin-top:15px;max-height:100px; "src = "{{$news->imgPath}} "><br>
 
 {!! Form::submit('Save',['class'=>'btn btn-primary'])!!}
