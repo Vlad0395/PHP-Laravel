@@ -11,10 +11,13 @@ class SubscribeController extends Controller
     public function store(Request $request)
     {
 
-        $subscribe = new Subscribe;
-        if($subscribe != $request){
-            $subscribe->email = $request->email;
-            $subscribe->save();
+        $subscribe = Subscribe::where('email','=',$request->email)->first();
+//
+        if(!$subscribe){
+            Subscribe::create([
+                'email'=>$request->email
+            ]);
+
         }
         return redirect('/news');
     }

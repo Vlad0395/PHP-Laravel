@@ -24,7 +24,7 @@
                             <p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>
                             <form action="/news/subscribe"  method="POST" class="form-control">
                                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                                <input type="email" placeholder="EMAIL ADDRESS">
+                                <input type="email" placeholder="EMAIL ADDRESS" name="email">
                                 <button>Subscribe</button>
                             </form>
                         </div>

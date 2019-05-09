@@ -8,7 +8,7 @@
         <nav class="navigation11">
             <ul class="mainNav">
                 <li><a href="/blog">Blog</a></li>
-                <li><a href="">Tutorials</a></li>
+                <li><a href="/tutorial">Tutorials</a></li>
                 <li><a href="">Packages</a></li>
                 <li><a href="">Podcast</a></li>
                 <li><a href="">Newsletter</a></li>
