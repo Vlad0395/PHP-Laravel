@@ -5,11 +5,9 @@
             <div class="col-md-8">
                <div class="imgMain">
                    <a href="news/{{$main->id}}">
-                       {{--<img src="{{asset('img/laravel-craftsman-cli.jpg')}}" alt="">--}}
                        <img src="{{asset($main->imgPath)}}" alt="">
                        <div class="cards">
                            <span>NEWS</span>
-                           {{--<h3>Allowing Users to send email with their own SMTP settings in Laravel</h3>--}}
                            <h3>{{$main->title}}</h3>
                        </div>
                    </a>
@@ -24,7 +22,8 @@
                         </div>
                         <div class="contentSubscribe sizeDesc">
                             <p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>
-                            <form action="" class="form-control">
+                            <form action="/news/subscribe"  method="POST" class="form-control">
+                                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                                 <input type="email" placeholder="EMAIL ADDRESS">
                                 <button>Subscribe</button>
                             </form>
@@ -35,11 +34,9 @@
                     <div class="col-md-12">
                         <div class="imgOtherNews">
                             <a href="news/{{$rightSideItem->id}}">
-                                {{--<img src="{{asset('img/laravel-mix-alias.png')}}" alt="">--}}
                                 <img src="{{asset($rightSideItem->imgPath)}}" alt="">
                                 <div class="cards">
                                     <span>NEWS</span>
-                                    {{--<h3>Laravel Mix Alias</h3>--}}
                                     <h3>{{$rightSideItem->title}}</h3>
                                 </div>
                             </a>
@@ -110,16 +107,4 @@
         </div>
     </div>
 </section>
-<section class="Latest News container">
-    <div class="row">
-        <div class="col-md-4 cardMini">7</div>
-        <div class="col-md-4 cardMini">8</div>
-        <div class="col-md-4 cardMini">9</div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 cardMini">10</div>
-        <div class="col-md-4 cardMini">11</div>
-        <div class="col-md-4 cardMini">12</div>
-    </div>
 
-</section>

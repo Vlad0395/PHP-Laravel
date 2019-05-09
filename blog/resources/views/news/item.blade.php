@@ -70,7 +70,8 @@
                     <p>
                         <b>No Spam, ever.</b> We'll never share your email&nbsp;address and you can opt&nbsp;out at any&nbsp;time.
                     </p>
-                    <form action="" method="post" class="form-control">
+                    <form action="/news/subscribe"  method="POST" class="form-control">
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div>
                             <input type="email" placeholder="Email Address" name="email"  class="inputSubscribeFooterPost" required="">
                             <button class="btnSubscribeFooterPost">Subscribe</button>

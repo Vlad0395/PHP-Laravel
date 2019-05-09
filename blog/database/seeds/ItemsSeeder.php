@@ -48,6 +48,9 @@ class ItemsSeeder extends Seeder
                 'imgPath' => '/photos/1/laravel-5.8.14.png',
                 'text' => 'asasasas',
                 'created_at' => '2019-04-24 20:30:29'
+            ],
+            [
+
             ]
         ];
         foreach ($news as $item) {

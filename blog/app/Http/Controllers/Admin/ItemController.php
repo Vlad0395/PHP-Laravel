@@ -5,7 +5,10 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Item;
+use App\Subscribe;
+use App\Notifications\NewPost;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Notification;
 
 class ItemController extends Controller
 {
@@ -49,6 +52,12 @@ class ItemController extends Controller
         $news->user_id = Auth::id();
         $news->imgPath = $request->filepath;
         $news->save();
+
+        $users = Subscribe::all();
+        foreach($users as $user) {
+            Notification::route('mail', $user->email)->notify(new NewPost($news));
+        }
+//        Notification::route('mail','ptashinskij.rostik@gmail.com')->notify(new NewPost($news));
         return redirect('/admin/news');
     }
 

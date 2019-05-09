@@ -10,49 +10,28 @@
     <table class="table" id="myTable">
         <thead>
         <tr>
-            <th>
-                #
-            </th>
-            <th>
-                title
-            </th>
-            <th>
-                description
-            </th>
+            <th>#</th>
+            <th>title</th>
+            <th>description</th>
             <th>img</th>
             <th>author</th>
-            <th>
-                Action
-            </th>
+            <th>Action</th>
         </tr>
         </thead>
         @foreach ($news as $item)
             <tbody>
             <tr>
-                <td>
-                    {{$loop->iteration}}
-                </td>
+                <td>{{$loop->iteration}}</td>
                 <td>
                     <a href="{{url('/admin/news/'.$item->id.'/edit')}}">{{$item->title}}</a>
                 </td>
-                <td>
-                    {{$item->description}}
-                </td>
+                <td>{{$item->description}}</td>
                 <td>
                     <img src="{{$item->imgPath}}" alt="{{$item->imgPath}} "  class="img-responsive" style="width: 20%;">
                 </td>
                 <td>{{$item->user->name}}</td>
                 <td>
-                    {{--<a href="#" data-id = "{{$item->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>--}}
-                    {{--<form action="" id="deleteNews" data-id="{{$item->id}}">--}}
-                        {{--@csrf--}}
-                        {{--<button type="submit" >--}}
-                            {{--DELETE--}}
-                        {{--</button>--}}
-
-                    {{--</form>--}}
-                 <a href="#" data-id="{{ $item->id }}" class="delete">delete</a>
-
+                    <a href="#" data-id="{{ $item->id }}" class="delete">delete</a>
                 </td>
             </tr>
             @endforeach
@@ -61,29 +40,6 @@
 
 @stop
 @section('js')
-    {{--<script>--}}
-    {{--$(document).ready(function () {--}}
-        {{--$("#deleteNews").on('submit',(function(){--}}
-            {{--var id = $(this).data("id");--}}
-            {{--console.log(id);--}}
-            {{--$.ajax(--}}
-                {{--{--}}
-                    {{--url: "news/"+id,--}}
-                    {{--type: 'DELETE',--}}
-                    {{--success: function ()--}}
-                    {{--{--}}
-                        {{--console.log("it Work");--}}
-                    {{--},--}}
-                    {{--error: function () {--}}
-                        {{--console.log("It failed");--}}
-                    {{--}--}}
-                {{--});--}}
-            {{--debugger;--}}
-
-        {{--}));--}}
-    {{--})--}}
-
-    {{--</script>--}}
     <script>
         $(document).ready( function(){
             $.ajaxSetup({

@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Item;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Carbon\Carbon;
-
-class BlogController extends Controller
+class TutorialController extends Controller
 {
+    //
     public function index(){
 
         $news = Item::orderBy('created_at', 'desc')->Paginate(5);
@@ -16,7 +17,7 @@ class BlogController extends Controller
             $createdAt = Carbon::parse($item['created_at']);
             $item['publish_date'] = $createdAt->format('M d, Y');
         }
-        return view('blog', compact('news'));
+        return view('news/index', compact('news'));
     }
     public function store(Request $request)
     {
@@ -28,5 +29,14 @@ class BlogController extends Controller
         $news->imgPath = $request->filepath;
         $news->save();
         return redirect('/news');
+    }
+    public function show($id){
+//        dd('asf');
+        $item = Item::find($id);
+
+        $createdAt = Carbon::parse($item['created_at']);
+        $item['publish_date'] = $createdAt->format('M d, Y');
+
+        return view('news/item', compact('item'));
     }
 }

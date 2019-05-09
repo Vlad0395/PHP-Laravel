@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubscribeTable extends Migration
+class CreateSubscribesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateSubscribeTable extends Migration
      */
     public function up()
     {
-        Schema::create('subscribe', function (Blueprint $table) {
-            $table->Increments('id');
-            $table->string('email')->unsigned();
+        Schema::create('subscribes', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('email');
             $table->timestamps();
         });
     }
@@ -27,6 +27,6 @@ class CreateSubscribeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subscribe');
+        Schema::dropIfExists('subscribes');
     }
 }

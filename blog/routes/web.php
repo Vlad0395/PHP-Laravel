@@ -19,8 +19,10 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/blog', 'BlogController@index');
+Route::get('/tutorial', 'TutorialController@index');
 Route::get('/news', 'ItemController@index');
 Route::get('/news/{id}', 'ItemController@show');
+Route::post('/news/subscribe', 'SubscribeController@store');
 //Route::get('/category/{slug}', 'HomeController@category');
 
 Route::group(['prefix'=>'admin','namespace'=>'admin','middleware'=>'admin'], function()

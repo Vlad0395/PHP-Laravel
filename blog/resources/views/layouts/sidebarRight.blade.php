@@ -6,8 +6,9 @@
         </div>
         <div class="contentSubscribe sizeDesc">
             <p>Join the weekly newsletter and never miss out on new tips, tutorials, and more.</p>
-            <form action="" class="form-control">
-                <input type="email" placeholder="EMAIL ADDRESS">
+            <form action="/news/subscribe"  method="POST" class="form-control">
+                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                <input type="email" placeholder="EMAIL ADDRESS" name="email">
                 <button>Subscribe</button>
             </form>
         </div>
