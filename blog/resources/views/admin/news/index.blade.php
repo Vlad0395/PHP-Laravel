@@ -2,6 +2,7 @@
 @section('title', 'News')
 
 @section('content_header')
+
     <h1>News</h1>
 @stop
 
@@ -31,7 +32,7 @@
                 </td>
                 <td>{{$item->user->name}}</td>
                 <td>
-                    <a href="#" data-id="{{ $item->id }}" class="delete">delete</a>
+                    <a href="#" data-id="{{ $item->id }}" class="delete"><i class="fas fa-trash"></i></a>
                 </td>
             </tr>
             @endforeach
