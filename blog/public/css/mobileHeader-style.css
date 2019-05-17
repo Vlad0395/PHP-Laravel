@@ -1,0 +1,24 @@
+.mobileNav{
+    box-shadow: 1px 0 2px 2px rgba(42,42,42,.25);
+}
+.mobileNav button {
+    border: none;
+}
+.mobileNav input {
+    width: 80%;
+    border: none;
+    text-transform: uppercase;
+    background: #f8f9fa;
+}
+.mobileForm {
+    display: flex;
+    justify-content: space-around;
+}
+.mobileMenu li{
+    text-align: center;
+    line-height: 0.75em;
+    font-size: 1.5em;
+    font-family: Source Sans Pro,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+

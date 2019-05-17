@@ -83,6 +83,7 @@ imgMain{
     text-transform: uppercase;
     padding: 15px;
     margin-left: -2px;
+    width: 30%;
 }
 .contentSubscribe input{
     color: #a1a1a1;
@@ -96,6 +97,7 @@ imgMain{
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
     margin: 0;
+    width:60%;
 }
 
 .imgOtherNews{

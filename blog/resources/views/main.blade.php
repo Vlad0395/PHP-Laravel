@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/sidebar-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/adminLTE-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mobileHeader-style.css')}}">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -41,7 +42,7 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 </head>
-<body>
+<body >
 <header>
     {{--@include('layouts.headerMain')--}}
     @include('layouts.mobileHeader')
@@ -49,9 +50,9 @@
 <content>
     @include('layouts.contentMain')
 </content>
-<footer class="footerLn">
-    @include('layouts.footer')
-</footer>
+{{--<footer class="footerLn">--}}
+    {{--@include('layouts.footer')--}}
+{{--</footer>--}}
 </body>
 
 </html>
