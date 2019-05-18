@@ -43,13 +43,16 @@
 
 </head>
 <body >
-<header>
-    {{--@include('layouts.headerMain')--}}
+<header class="headerLnPC">
+    @include('layouts.headerMain')
+
+</header>
+<header class = "mobile">
     @include('layouts.mobileHeader')
 </header>
-<content>
+
     @include('layouts.contentMain')
-</content>
+
 {{--<footer class="footerLn">--}}
     {{--@include('layouts.footer')--}}
 {{--</footer>--}}
