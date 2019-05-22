@@ -53,9 +53,9 @@
 
     @include('layouts.contentMain')
 
-{{--<footer class="footerLn">--}}
-    {{--@include('layouts.footer')--}}
-{{--</footer>--}}
+<footer class="footerLn">
+    @include('layouts.footer')
+</footer>
 </body>
 
 </html>

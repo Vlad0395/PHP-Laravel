@@ -103,7 +103,7 @@
                     <a href=""><img src="{{asset('img/vueschool.png')}}" alt=""></a>
                 </div>
             </div>
-
+{{----}}
         </div>
     </div>
 </section>
