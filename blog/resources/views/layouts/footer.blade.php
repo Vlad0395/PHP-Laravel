@@ -7,7 +7,7 @@
     </ul>
 </section>
 <section class="twoNav">
-    <ul class="mainNav">
+    <ul class="mainNav mobileFooterNav">
         <li><a href="">Links</a></li>
         <li><a href="">Newsletter</a></li>
         <li><a href="">Advertise</a></li>
@@ -38,4 +38,5 @@
     <br>
     <img src="{{asset('img/zaengle-logo.png')}}" class="imgSubTitle" alt="zaengle">
 </section>
+
 
