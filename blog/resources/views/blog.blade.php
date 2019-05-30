@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{asset('css/content-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/sidebar-style.css')}}">
     <link rel="stylesheet" href="{{asset('css/footer-style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/mobileHeader-style.css')}}">
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!--fontwesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,7 +21,12 @@
     <title>News</title>
 </head>
 <body>
-@include('layouts.header')
+<header class="headerLnPC">
+    @include('layouts.header')
+</header>
+<header class = "mobile">
+    @include('layouts.mobileHeader')
+</header>
 <div class="container-fluid newsLn">
     <div class="container">
         <h1>Blog</h1>
