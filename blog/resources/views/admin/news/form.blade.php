@@ -4,6 +4,11 @@
 </div>
 
 <div class="form-group">
+    {!! Form::label('category_id', 'Category') !!}
+    {!! Form::select('category_id', $categories, null, ['class'=>'form-control', 'multiple'=>true]) !!}
+</div>
+
+<div class="form-group">
     {!! Form::label('description', 'Description')  !!}
     {!! Form::text('description',null,['class'=>'form-control'] ,['rows'=>'10'])!!}
 </div><div class="form-group">

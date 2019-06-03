@@ -15,11 +15,9 @@
             <th>
                 name
             </th>
+
             <th>
-                img
-            </th>
-            <th>
-                Action
+
             </th>
         </tr>
         </thead>
@@ -33,10 +31,7 @@
                     <a href="{{url('/admin/category/'.$category->id.'/edit')}}">{{$category->name}}</a>
                 </td>
                 <td>
-                    <img src="{{$category->imgPath}}" alt="{{$category->imgPath}}" class="img-responsive">
-                </td>
-                <td>
-                    <a href="#" data-id = "{{$category->id}}" class ="delete"><i class="fas fa-trash-alt">DELETE</i></a>
+                    <a href="#" data-id = "{{$category->id}}" class ="delete"><i class="fas fa-trash-alt"></i></a>
                 </td>
             </tr>
             @endforeach

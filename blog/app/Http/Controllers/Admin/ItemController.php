@@ -9,7 +9,7 @@ use App\Subscribe;
 use App\Notifications\NewPost;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Notification;
-
+use App\Category;
 class ItemController extends Controller
 {
     /**
@@ -33,8 +33,9 @@ class ItemController extends Controller
     public function create()
     {
         $news = new Item();
+        $categories= Category::all()->pluck('name');
 
-        return view('admin.news.create' , compact('news'));
+        return view('admin.news.create' , compact('news','categories'));
     }
 
     /**
@@ -51,6 +52,8 @@ class ItemController extends Controller
         $news->text = $request->text;
         $news->user_id = Auth::id();
         $news->imgPath = $request->filepath;
+        dd($request->category_id);
+        $news->category_id = $request->category_id;
         $news->save();
 
         $users = Subscribe::all();
@@ -81,7 +84,8 @@ class ItemController extends Controller
     public function edit($id)
     {
         $news = Item::find($id);
-        return view('admin.news.edit' , compact('news'));
+        $categories= Category::all()->pluck('name');
+        return view('admin.news.edit' , compact('news','categories'));
     }
 
     /**
@@ -98,6 +102,7 @@ class ItemController extends Controller
         $news->description = $request->description;
         $news->text = $request->text;
         $news->imgPath = $request->filepath;
+        $news->category = $request->category;
         $news->save();
         return redirect('/admin/news');
     }

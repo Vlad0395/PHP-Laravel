@@ -46,8 +46,8 @@ class CategoryController extends Controller
         $category = new Category();
         $category->name = $request->name;
         $category->slug = $request->slug;
-        $category->description = $request->description;
-        $category->imgPath = $request->filepath;
+//        $category->description = $request->description;
+//        $category->imgPath = $request->filepath;
         $category->save();
         return redirect('/admin/category');
     }
@@ -90,8 +90,8 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $category->name = $request->name;
         $category->slug = $request->slug;
-        $category->description = $request->description;
-        $category->imgPath = $request->filepath;
+//        $category->description = $request->description;
+//        $category->imgPath = $request->filepath;
         $category->save();
         return redirect('/admin/category');
 

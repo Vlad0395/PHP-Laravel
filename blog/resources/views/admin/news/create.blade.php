@@ -20,6 +20,10 @@
     {!! Form::close() !!}
 @stop
 @section('js')
+    <script>
+        $('select').select2();
+    </script>
+
     <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
     <script>
         var options = {

@@ -23,4 +23,9 @@ class Category extends Model
 //    {
 //        return $this->belongsTo(Product::class, 'category_id','id');
 //    }
+
+    public function news()
+    {
+        return $this->belongsTo('App\Item');
+    }
 }
