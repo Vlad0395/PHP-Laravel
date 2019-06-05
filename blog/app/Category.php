@@ -26,6 +26,6 @@ class Category extends Model
 
     public function news()
     {
-        return $this->belongsTo('App\Item');
+        return $this->hasOne('App\Item');
     }
 }

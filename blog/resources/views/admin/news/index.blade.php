@@ -32,7 +32,7 @@
                     <img src="{{$item->imgPath}}" alt="{{$item->imgPath}} "  class="img-responsive" style="width: 20%;">
                 </td>
                 <td>{{$item->user->name}}</td>
-                {{dd($item->category)}}
+{{--                {{dd($item->category)}}--}}
                 <td>{{$item->category->name}}</td>
                 <td>
                     <a href="#" data-id="{{ $item->id }}" class="delete"><i class="fas fa-trash"></i></a>

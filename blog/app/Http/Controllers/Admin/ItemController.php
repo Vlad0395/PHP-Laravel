@@ -33,7 +33,7 @@ class ItemController extends Controller
     public function create()
     {
         $news = new Item();
-        $categories= Category::all()->pluck('name');
+        $categories= Category::all();
 
         return view('admin.news.create' , compact('news','categories'));
     }
@@ -47,13 +47,16 @@ class ItemController extends Controller
     public function store(Request $request)
     {
         $news = new Item();
+
         $news->title = $request->title;
         $news->description = $request->description;
         $news->text = $request->text;
         $news->user_id = Auth::id();
         $news->imgPath = $request->filepath;
-        dd($request->category_id);
-        $news->category_id = $request->category_id;
+//        dd($request->all());
+        $category = Category::find($request->category_id)->id;
+//        dd($category);
+        $news->category_id = $category;
         $news->save();
 
         $users = Subscribe::all();
