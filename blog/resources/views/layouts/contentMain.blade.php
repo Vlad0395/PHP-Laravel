@@ -7,7 +7,7 @@
                    <a href="news/{{$main->id}}">
                        <img src="{{asset($main->imgPath)}}" alt="">
                        <div class="cards">
-                           <span>NEWS</span>
+                           <span>{{$main->category->name}}</span>
                            <h3>{{$main->title}}</h3>
                        </div>
                    </a>
@@ -36,7 +36,7 @@
                             <a href="news/{{$rightSideItem->id}}">
                                 <img src="{{asset($rightSideItem->imgPath)}}" alt="">
                                 <div class="cards">
-                                    <span>NEWS</span>
+                                    <span>{{$rightSideItem->category->name}}</span>
                                     <h3>{{$rightSideItem->title}}</h3>
                                 </div>
                             </a>
@@ -52,7 +52,7 @@
                     <a href="news/{{$item->id}}">
                         <img src="{{asset($item->imgPath)}}" alt="">
                         <div class="cards">
-                            <span>NEWS</span>
+                            <span>{{$item->category->name}}</span>
                             <h3>{{$item->title}}</h3>
                         </div>
                     </a>

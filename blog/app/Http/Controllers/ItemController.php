@@ -6,6 +6,7 @@ use App\Item;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use App\Category;
 class ItemController extends Controller
 {
     //

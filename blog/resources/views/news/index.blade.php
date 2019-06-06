@@ -40,7 +40,7 @@
                         <img src="{{asset($item->imgPath)}}" alt="{{$item->imgPath}}">
                     </div>
                     <div class="postContent">
-                        <span class="label">News <span class="text-grey">/</span> <span class="text-bold">{{$item->publish_date}}</span></span>
+                        <span class="label">{{$item->category->name}} <span class="text-grey">/</span> <span class="text-bold">{{$item->publish_date}}</span></span>
                         <h2><a href="news/{!! $item->id!!}">{!! $item->title !!}</a></h2>
                         <p>{!! ($item->description)!!}</p>
                         <a href="news/{!! $item->id!!}" class="readMore">Read more…</a>
